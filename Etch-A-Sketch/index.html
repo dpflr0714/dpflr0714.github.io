@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+<title>Etch-a-Sketch</title>
+<style>
+
+</style>
+</head>
+
+<body>
+<div class="center font" >
+<h1>Etch-a-sketch</h1>
+	<h3>
+		<button id="randomRGB" class="button font">Rainbow</button>
+		<input type="color" id="colorInput" value ="#000000" onchange="newColor(this.value)">
+	</h3>
+
+	<h3>
+		<input type="range" class ="slider" id ="rangeInput" min="1" max="100" value="50" onchange="twoCalls(this.value)">
+	</h3>
+
+	<div id="gridContainer" class="gridContainers">
+	</div>
+	
+	<div>
+		<button id="clearBtn" class="button font">Clear</button>
+	</div>
+
+</div>
+</body>
+	<script type="text/javascript" src="script.js"></script>
+</html>
